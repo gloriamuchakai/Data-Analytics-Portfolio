@@ -6,61 +6,88 @@
     <title>My Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: Arial, Calibri, sans-serif;
+            background-color: #d2b48c; /* Light Brown */
             color: #333;
-            text-align: center;
             padding: 20px;
+            margin: 0;
         }
 
-        h1 {
-            color: #0077cc;
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: auto;
+            gap: 20px;
         }
 
-        h2 {
-            color: #005fa3;
+        .left-column {
+            flex: 40%;
+            background: #8B5A2B; /* Darker Brown */
+            padding: 20px;
+            border-radius: 8px;
+            color: white; /* Light text for contrast */
         }
 
-        p {
+        .right-column {
+            flex: 60%;
+            background: #f5f5f5; /* Lighter Shade */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #004080; /* Dark Blue */
+        }
+
+        p, ul {
             font-size: 18px;
-            text-align: left;
-            max-width: 800px;
-            margin: 0 auto;
         }
 
         ul {
-            text-align: left;
-            max-width: 800px;
-            margin: 0 auto;
+            list-style-type: square;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
+    <h1 style="text-align: center;">Welcome to My Portfolio</h1>
 
-    <h2>About Me</h2>
-    <p>Hi, I'm <strong>Gloria Muchakai</strong>, a Data Analyst with expertise in <strong>Business Intelligence, Statistical Modeling, and Financial Analysis</strong>. 
-        I have experience working in the banking sector, leveraging data to drive strategic decision-making and sustainability initiatives.</p>
+    <div class="container">
+        <!-- Left Column (About Me & Contact) -->
+        <div class="left-column">
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Gloria Muchakai</strong>, a Data Analyst with expertise in Business Intelligence, Statistical Modeling, and Financial Analysis. I have experience working in the banking sector, leveraging data to drive strategic decision-making and sustainability initiatives.</p>
 
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>Nursery Strategy Analysis</strong> – Identified customer funding patterns and developed personalized engagement strategies.</li>
-        <li><strong>BMGF Loan Analysis</strong> – Analyzed financial datasets for a Bill & Melinda Gates Foundation loan product.</li>
-        <li><strong>Salary Switch Campaign</strong> – Monitored high-performing current accounts and improved engagement.</li>
-        <li><strong>Credit Scoring & Risk Analysis</strong> – Evaluated the bank’s credit scoring model.</li>
-        <li><strong>Sustainable Lending Project</strong> – Measured <strong>Scope 3 GHG emissions</strong> as part of sustainability reporting.</li>
-    </ul>
+            <h2>Contact</h2>
+            <p>📩 <strong>Email:</strong> [Your Email] <br>
+               🔗 <strong>LinkedIn:</strong> [Your LinkedIn Profile] <br>
+               📂 <strong>GitHub:</strong> [Your GitHub Profile]</p>
+        </div>
 
-    <h2>Skills</h2>
-    <p>📊 Power BI, Excel, SQL<br>
-       📈 Financial Analysis & Modeling<br>
-       🔍 Data Cleaning & Statistical Modeling<br>
-       🌱 Sustainability Reporting & ESG Metrics</p>
+        <!-- Right Column (Projects & Skills) -->
+        <div class="right-column">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Nursery Strategy Analysis</strong> – Identified customer funding patterns and developed personalized engagement strategies.</li>
+                <li><strong>BMGF Loan Analysis</strong> – Analyzed financial datasets for a Bill & Melinda Gates Foundation loan product.</li>
+                <li><strong>Salary Switch Campaign</strong> – Monitored high-performing current accounts and improved engagement.</li>
+                <li><strong>Credit Scoring & Risk Analysis</strong> – Evaluated the bank’s credit scoring model.</li>
+                <li><strong>Sustainable Lending Project</strong> – Measured <strong>Scope 3 GHG emissions</strong> as part of sustainability reporting.</li>
+            </ul>
 
-    <h2>Contact</h2>
-    <p>📩 <strong>Email:</strong> gloriamuchakai@gmail.com <br>
-       🔗 <strong>LinkedIn:</strong> https://www.linkedin.com/in/gloria-muchakai <br>
-       📂 <strong>GitHub:</strong> [Your GitHub Profile]</p>
+            <h2>Skills</h2>
+            <p>📊 Power BI, Excel, SQL<br>
+               📈 Financial Analysis & Modeling<br>
+               🔍 Data Cleaning & Statistical Modeling<br>
+               🌱 Sustainability Reporting & ESG Metrics</p>
+        </div>
+    </div>
 </body>
 </html>
+
 
