@@ -5,66 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
-            display: flex;
-            height: 100vh;
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", serif;
+            background-color: #ffffff; /* White Background */
             color: #333;
-        }
-        .sidebar {
-            width: 30%;
-            background-color: #2F5233;
-            color: white;
             padding: 20px;
+            margin: 0;
+        }
+
+        .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            max-width: 1000px;
+            margin: auto;
+            gap: 20px;
         }
-        .main-content {
-            width: 70%;
-            background-color: #A3B18A;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+
+        .left-column {
+            flex: 40%;
+            background: #2E8B57; /* Dark Green */
+            padding: 20px;
+            border-radius: 8px;
+            color: white; /* Light text for contrast */
+            text-align: center;
         }
-        h1, h2 {
-            color: #1E3D32;
-            text-decoration: underline;
-        }
-        p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
+
         .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid white;
             object-fit: cover;
+            border: 3px solid white;
+            margin-bottom: 15px;
+        }
+
+        .right-column {
+            flex: 60%;
+            background: #98FB98; /* Light Green */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFD700; /* Gold */
+        }
+
+        h2 {
+            color: #FFD700; /* Gold */
+            text-decoration: underline; /* Underlined headings */
+        }
+
+        p, ul {
+            font-size: 18px;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h1>Gloria Muchakai</h1>
-        <p>Data Analyst | Business Intelligence | Financial Analysis</p>
-    </div>
-    <div class="main-content">
-        <h2>About Me</h2>
-        <p>I specialize in Business Intelligence, Statistical Modeling, and Financial Analysis, using data-driven insights to improve decision-making.</p>
-        <h2>Projects</h2>
-        <p>Here are some of the projects I've worked on...</p>
+    <h1>Welcome to My Portfolio</h1>
+
+    <div class="container">
+        <!-- Left Column (Profile Picture, About Me & Contact) -->
+        <div class="left-column">
+            <!-- Profile Picture -->
+            <img src="YOUR_IMAGE_URL_HERE" alt="Profile Picture" class="profile-pic">
+
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Gloria Muchakai</strong>, a Data Analyst with expertise in Business Intelligence, Statistical Modeling, and Financial Analysis. I have experience working in the banking sector, leveraging data to drive strategic decision-making and sustainability initiatives.</p>
+
+            <h2>Contact</h2>
+            <p>📩 <strong>Email:</strong> [Your Email] <br>
+               🔗 <strong>LinkedIn:</strong> [Your LinkedIn Profile] <br>
+               📂 <strong>GitHub:</strong> [Your GitHub Profile]</p>
+        </div>
+
+        <!-- Right Column (Projects & Skills) -->
+        <div class="right-column">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Nursery Strategy Analysis</strong> – Identified customer funding patterns and developed personalized engagement strategies.</li>
+                <li><strong>BMGF Loan Analysis</strong> – Analyzed financial datasets for a Bill & Melinda Gates Foundation loan product.</li>
+                <li><strong>Salary Switch Campaign</strong> – Monitored high-performing current accounts and improved engagement.</li>
+                <li><strong>Credit Scoring & Risk Analysis</strong> – Evaluated the bank’s credit scoring model.</li>
+                <li><strong>Sustainable Lending Project</strong> – Measured <strong>Scope 3 GHG emissions</strong> as part of sustainability reporting.</li>
+            </ul>
+
+            <h2>Skills</h2>
+            <p>📊 Power BI, Excel, SQL<br>
+               📈 Financial Analysis & Modeling<br>
+               🔍 Data Cleaning & Statistical Modeling<br>
+               🌱 Sustainability Reporting & ESG Metrics</p>
+        </div>
     </div>
 </body>
 </html>
+
 
 
 
